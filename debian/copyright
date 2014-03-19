@@ -2,7 +2,7 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: gestioip
 Source: http://sourceforge.net/p/gestioip
 
-Files debian/*
+Files: debian/*
 Copyright: 2014 Arturo Borrero Gonzalez <arturo.borrero.glez@gmail.com>
 	   2014 Carlos Alvarez Barba <sharlie89@gmail.com>
 	   2014 Pablo Vazquez Martinez <pabvazmar@gmail.com>

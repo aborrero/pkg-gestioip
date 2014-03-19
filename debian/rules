@@ -11,3 +11,7 @@
 
 %:
 	dh $@ 
+
+override_dh_fixperms:
+	chmod -R 0644 debian/gestioip/usr/share/gestioip/imagenes/*
+	dh_fixperms

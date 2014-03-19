@@ -11,7 +11,26 @@ Vcs-Browser: https://github.com/aborrero/pkg-gestioip.git
 
 Package: gestioip
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+	apache2 | httpd,
+	mysql-client | mariadb-client,
+	libapache2-mod-perl2,
+	libdbi-perl,
+	libdbd-mysql-perl,
+	libnet-ip-perl,
+	libnet-ping-external-perl,
+	libparallel-forkmanager-perl,
+	libsnmp-info-perl,
+	libmail-perl,
+	libtime-hires-perl,
+	libdate-calc-perl,
+	libdate-manip-perl,
+	libnet-dns-perl,
+	libspreadsheet-parseexcel-perl,
+	libole-storage-lite-perl,
+	libgd-graph-perl,
+	libwww-perl,
+	libtext-diff-perl
 Description: Web-based IP address management software
  GestioIP is an automated, web based IPv4/IPv6 address management (IPAM) software.
  It features powerful network discovery functions and offers search and filter

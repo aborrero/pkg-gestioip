@@ -1,9 +1,27 @@
 gestioip for Debian
 -------------------
 
-<this file describes information about the source package, see Debian policy
-manual section 4.14. You WILL either need to modify or delete this file>
+We are maintaining this package as a collaborative work between:
+ * Pablo Martinez Vazquez <pabvazmar@gmail.com>
+ * Carlos Alvarez Barba <sharlie89@gmail.com>
+ * Arturo Borrero Gonzalez <arturo.borrero.glez@gmail.com>
 
+For this to happen, we are using GitHub to host the code of the package and
+the history of changes.
+See https://github.com/aborrero/pkg-gestioip
 
+In the VCS (git) we are following some rules:
+ * One commit, one change.
+ * All commits include a title and a description.
+ * The title has a prefix, where the main file/dir edited by the commit is stated.
+ * All commits have a proper 'Signed-off-by:' line, following Linux Kernel policy.
+
+To build the package, follow these steps:
+ % git clone https://github.com/aborrero/pkg-gestioip
+ % cd pkg-gestioip
+ % pristine-tar checkout gestioip_3.0+dfsg0.orig.tar.gz
+ % dpkg-buildpackage -tc
+
+Eventually, this package will get into Debian. There is an ITP, #742110
 
 

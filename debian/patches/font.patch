@@ -1,0 +1,24 @@
+Conditional load of arial.ttf
+
+The font file arial.ttf is not included in the Debian package, as
+it is not satisfy DFSG.
+
+This patch introduces a conditional load of arial.ttf.
+
+Upstream knows about this, and the next version of GestioIP is
+expected to include the patch for us to remove from here.
+
+--- pkg-gestioip.orig/gestioip/modules/GestioIP.pm	2014-03-19 22:43:06.798207722 +0100
++++ pkg-gestioip/gestioip/modules/GestioIP.pm	2014-03-27 23:51:05.817349749 +0100
+@@ -10958,7 +10958,10 @@
+ 		show_values => 1,
+ 	);
+ 
+-	my $arial=$graph->set_value_font("$DOCUMENT_ROOT/fonts/arial.ttf",10);
++	if ( -e "$DOCUMENT_ROOT/font/arial.ttf" ) {
++		my $arial=$graph->set_value_font("$DOCUMENT_ROOT/fonts/arial.ttf",10);
++	}
++
+ 	no warnings;
+ 	$graph->set( dclrs => [ qw(#BAD6FF #90C8FF #6699FF #6666FF #B28BC0 #C297D1 #D7A8E8 #ECB8FF #66CC99 #58B185 #6FDFA7 #7DFBBC #B5882D #CC9933 #E1A938 #FFC040 ) ] );
+ 	use warnings;

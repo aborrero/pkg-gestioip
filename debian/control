@@ -15,7 +15,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
 	apache2 | httpd
 Suggests: mysql-server | mariadb-server
 Description: Web-based IP address management software
- GestioIP is an automated, web based IPv4/IPv6 address management (IPAM) software.
+ GestioIP is an automated, web based IPv4/IPv6 address management (IPAM)
+ software.
  It features powerful network discovery functions and offers search and filter
  functions for both networks and host, permitting Internet Search Engine
  equivalent expressions. This lets you find the information that administrators
@@ -48,7 +49,8 @@ Depends: ${misc:Depends},
 	libwww-perl,
 	libtext-diff-perl
 Description: Core Perl module for GestioIP IPAM
- GestioIP is an automated, web based IPv4/IPv6 address management (IPAM) software.
+ GestioIP is an automated, web based IPv4/IPv6 address management (IPAM)
+ software.
  It features powerful network discovery functions and offers search and filter
  functions for both networks and host, permitting Internet Search Engine
  equivalent expressions. This lets you find the information that administrators

@@ -14,5 +14,9 @@
 
 override_dh_fixperms:
 	chmod -R 0644 debian/gestioip/usr/share/gestioip/imagenes/*
+	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/OS
+	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/apps
+	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/style
+	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/vendors
 	chmod -R 0640 debian/gestioip/usr/share/gestioip/priv/ip_config
 	dh_fixperms

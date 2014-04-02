@@ -12,7 +12,23 @@ Vcs-Browser: https://github.com/aborrero/pkg-gestioip.git
 Package: gestioip
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
-	apache2 | httpd,
+	apache2 | httpd
+Suggests: mysql-server | mariadb-server
+Description: Web-based IP address management software
+ GestioIP is an automated, web based IPv4/IPv6 address management (IPAM) software.
+ It features powerful network discovery functions and offers search and filter
+ functions for both networks and host, permitting Internet Search Engine
+ equivalent expressions. This lets you find the information that administrators
+ frequently need easily and quickly.
+ .
+ GestioIP also incorporates an automated VLAN management system.
+ .
+ Visit www.gestioip.net for more information.
+
+Package: libgestioip-perl
+Architecture: all
+Section: perl
+Depends: ${misc:Depends},
 	mysql-client | mariadb-client,
 	libapache2-mod-perl2,
 	libdbi-perl,
@@ -31,8 +47,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
 	libgd-graph-perl,
 	libwww-perl,
 	libtext-diff-perl
-Suggests: mysql-server | mariadb-server
-Description: Web-based IP address management software
+Description: Core Perl module for GestioIP IPAM
  GestioIP is an automated, web based IPv4/IPv6 address management (IPAM) software.
  It features powerful network discovery functions and offers search and filter
  functions for both networks and host, permitting Internet Search Engine
@@ -40,5 +55,7 @@ Description: Web-based IP address management software
  frequently need easily and quickly.
  .
  GestioIP also incorporates an automated VLAN management system.
+ .
+ This package is the core Perl module for GestioIP.
  .
  Visit www.gestioip.net for more information.

@@ -12,6 +12,10 @@
 %:
 	dh $@ 
 
+override_dh_install:
+	dh_install -pgestioip --exclude=GestioIP.pm
+	dh_install -plibgestioip-perl
+
 override_dh_fixperms:
 	chmod -R 0644 debian/gestioip/usr/share/gestioip/imagenes/*
 	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/OS

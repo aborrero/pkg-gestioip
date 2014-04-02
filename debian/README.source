@@ -1,6 +1,16 @@
 gestioip for Debian
 -------------------
 
+- About the source package:
+
+The upstream tarball include a file called arial.ttf which breach DFSG.
+We repacked the source code without that file.
+
+For the software to don't fail, we contacted upstream author and he gave us
+the debian/patches/font.patch patch.
+
+- About the development of the package:
+
 We are maintaining this package as a collaborative work between:
  * Pablo Martinez Vazquez <pabvazmar@gmail.com>
  * Carlos Alvarez Barba <sharlie89@gmail.com>

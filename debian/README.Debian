@@ -1,6 +1,10 @@
 gestioip for Debian
 -------------------
 
-<possible notes regarding this package - if none, delete this file>
+How to install:
+
+* install gestioip via aptitude/apt-get .
+* restart the webserver, i.e. `service apache2 restart'.
+* point your browser to http://localhost/gestioip/install
 
  -- Arturo Borrero Gonzalez <arturo.borrero.glez@gmail.com>  Wed, 19 Mar 2014 11:20:41 +0100

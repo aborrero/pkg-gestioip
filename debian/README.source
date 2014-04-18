@@ -29,7 +29,7 @@ In the VCS (git) we are following some rules:
 To build the package, follow these steps:
  % git clone https://github.com/aborrero/pkg-gestioip
  % cd pkg-gestioip
- % pristine-tar checkout gestioip_3.0+dfsg0.orig.tar.gz
+ % pristine-tar checkout gestioip_3.0.26+dfsg0.orig.tar.gz
  % dpkg-buildpackage -tc
 
 Eventually, this package will get into Debian. There is an ITP, #742110

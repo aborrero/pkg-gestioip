@@ -1,1 +1,1 @@
-usr/share/gestioip/priv/ip_config etc/gestioip/bd.conf
+etc/gestioip/ip_config usr/share/gestioip/priv/ip_config

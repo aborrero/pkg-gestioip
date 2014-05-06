@@ -1,2 +1,3 @@
+gestioip/priv/ip_config etc/gestioip/
 gestioip/* usr/share/gestioip
 debian/apache2.conf etc/gestioip/

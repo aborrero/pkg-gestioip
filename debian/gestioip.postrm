@@ -27,7 +27,6 @@ case "$1" in
 		APACHE_CONF="/etc/apache2/sites-available/gestioip.conf"
 		if [ -e $APACHE_CONF ] || [ -h $APACHE_CONF ] ; then
 			rm -rf $APACHE_CONF
-			echo "I: You may reload apache2 to clean gestioip conf."
 		fi
 	;;
 

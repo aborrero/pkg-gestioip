@@ -21,7 +21,7 @@ case "$1" in
 	;;
 
 	remove|deconfigure)
-		a2dissite gestioip || :
+		a2dissite gestioip.conf || :
 	;;
 
 	failed-upgrade)

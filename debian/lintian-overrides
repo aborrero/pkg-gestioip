@@ -1,0 +1,3 @@
+# We need that perms there
+gestioip: non-standard-file-perm etc/gestioip/ip_config 0664 != 0644
+

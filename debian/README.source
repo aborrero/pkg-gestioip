@@ -1,9 +1,9 @@
 gestioip for Debian
 -------------------
 
-- About the source package:
+- About DFSG
 
-The upstream tarball include a file called arial.ttf which breach DFSG.
+The upstream tarball includes a file called arial.ttf which breaks DFSG.
 We repacked the source code without that file.
 
 For the software to don't fail, we contacted upstream author and he gave us
@@ -33,5 +33,3 @@ To build the package, follow these steps:
  % dpkg-buildpackage -tc
 
 Eventually, this package will get into Debian. There is an ITP, #742110
-
-

@@ -26,5 +26,5 @@ override_dh_fixperms:
 	chmod 0644 $(DOCUMENT_ROOT)/install/*.css
 	chmod 0644 $(DOCUMENT_ROOT)/install/*.ico
 	dh_fixperms
-	chown root:www-data $(CONF_DIR)/ip_config
+	chgrp www-data $(CONF_DIR)/ip_config
 	chmod a-x,g+w $(CONF_DIR)/ip_config

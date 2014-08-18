@@ -3,6 +3,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+DOCUMENT_ROOT = debian/gestioip/usr/share/gestioip
+CONF_DIR = debian/gestioip/etc/gestioip
+
 %:
 	dh $@ 
 
@@ -11,17 +14,17 @@ override_dh_install:
 	dh_install -plibgestioip-perl
 
 override_dh_fixperms:
-	chmod -R 0644 debian/gestioip/usr/share/gestioip/imagenes/*
-	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/OS
-	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/apps
-	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/style
-	chmod 0755 debian/gestioip/usr/share/gestioip/imagenes/vendors
-	chmod 0644 debian/gestioip/usr/share/gestioip/*.css
-	chmod 0644 debian/gestioip/usr/share/gestioip/*.ico
-	chmod 0644 debian/gestioip/usr/share/gestioip/errors/*
-	chmod 0644 debian/gestioip/usr/share/gestioip/install/vars_*
-	chmod 0644 debian/gestioip/usr/share/gestioip/install/*.css
-	chmod 0644 debian/gestioip/usr/share/gestioip/install/*.ico
+	chmod -R 0644 $(DOCUMENT_ROOT)/imagenes/*
+	chmod 0755 $(DOCUMENT_ROOT)/imagenes/OS
+	chmod 0755 $(DOCUMENT_ROOT)/imagenes/apps
+	chmod 0755 $(DOCUMENT_ROOT)/imagenes/style
+	chmod 0755 $(DOCUMENT_ROOT)/imagenes/vendors
+	chmod 0644 $(DOCUMENT_ROOT)/*.css
+	chmod 0644 $(DOCUMENT_ROOT)/*.ico
+	chmod 0644 $(DOCUMENT_ROOT)/errors/*
+	chmod 0644 $(DOCUMENT_ROOT)/install/vars_*
+	chmod 0644 $(DOCUMENT_ROOT)/install/*.css
+	chmod 0644 $(DOCUMENT_ROOT)/install/*.ico
 	dh_fixperms
-	chown root:www-data debian/gestioip/etc/gestioip/ip_config
-	chmod a-x,g+w debian/gestioip/etc/gestioip/ip_config
+	chown root:www-data $(CONF_DIR)/ip_config
+	chmod a-x,g+w $(CONF_DIR)/ip_config

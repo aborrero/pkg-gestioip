@@ -1,12 +1,13 @@
-Conditional load of arial.ttf
-
-The font file arial.ttf is not included in the Debian package, as
-it is not satisfy DFSG.
-
-This patch introduces a conditional load of arial.ttf.
-
-Upstream knows about this, and the next version of GestioIP is
-expected to include the patch for us to remove from here.
+Author: Arturo Borrero Gonzalez <arturo.borrero.glez@gmail.com>
+Description: Conditional load of arial.ttf
+ The font file arial.ttf is not included in the Debian package, as
+ it is not satisfy DFSG.
+ .
+ This patch introduces a conditional load of arial.ttf.
+ .
+ Upstream knows about this, and the next version of GestioIP is
+ expected to include the patch for us to remove from here.
+Last-Updated: 2014-03-27
 
 --- pkg-gestioip.orig/gestioip/modules/GestioIP.pm	2014-03-19 22:43:06.798207722 +0100
 +++ pkg-gestioip/gestioip/modules/GestioIP.pm	2014-03-27 23:51:05.817349749 +0100
